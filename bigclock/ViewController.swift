@@ -20,8 +20,11 @@ class ViewController: NSViewController {
         formatter.dateFormat = ""
         formatter.timeStyle = .ShortStyle
         timerLabel.stringValue = formatter.stringFromDate(NSDate())
+        self.view.window!.title = timerLabel.stringValue
         timerLabel.sizeToFit()
-    }rn    func handleResize(event:AnyObject?) {
+    }
+    
+    func handleResize(event:AnyObject?) {
         print(event)
     }
     
