@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ur8-6Y-jvd">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="V5D-ai-uqu">
+            <objects>
+                <viewController id="Ur8-6Y-jvd" customClass="ViewController" customModule="bigclock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="VMf-ph-JBm">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4n-tt-kbB">
+                                <rect key="frame" x="207" y="142" width="37" height="17"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="xMC-tO-WwF">
+                                    <font key="font" size="64" name="RobotoMono-Regular"/>
+                                    <color key="textColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="E4n-tt-kbB" firstAttribute="centerX" secondItem="VMf-ph-JBm" secondAttribute="centerX" id="a4z-tD-WNj"/>
+                            <constraint firstItem="E4n-tt-kbB" firstAttribute="centerY" secondItem="VMf-ph-JBm" secondAttribute="centerY" id="naw-Rf-pep"/>
+                        </constraints>
+                        <animations/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="VMf-ph-JBm" id="XcX-T8-1n1"/>
+                        <outlet property="timerLabel" destination="E4n-tt-kbB" id="Wde-57-Liw"/>
+                    </connections>
+                </viewController>
+                <customObject id="t5G-MA-yhM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="410"/>
+        </scene>
+    </scenes>
+</document>
